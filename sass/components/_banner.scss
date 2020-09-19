@@ -1,0 +1,37 @@
+#home {
+    #banner {
+        background-image: linear-gradient(to right, $main-color, $secondary-color);
+        color: $white-color;
+        padding-top: 5%;
+
+        .promo-title {
+            font-size: 50px;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+
+        .paragraph {
+            font-size: 23px;
+        }
+
+        a {
+            color: $white-color;
+            text-decoration: none;
+            
+            .play-btn {
+                width: 60px;
+                margin: 20px;
+            }
+        }
+
+        .img-fluid {
+            @include lg {margin-top: 185px;}
+            @include xl {margin-top: 42px;}
+            @include exl {margin-top: 42px;}
+        }
+    }
+    
+    .bottom-img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,94 @@
+#testimonials {
+    margin: 100px 0;
+
+    .container {
+        padding: 0px;
+
+        .title {
+            font-weight: 700;
+
+            @include xs {font-size: 31px}
+            @include sm {font-size: 31px}
+            @include md {font-size: 31px}
+        }
+    
+        .title::before {
+            content: '';
+            background: $main-color;
+            height: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: translateY(63px);
+        }
+
+        .title::after {
+            content: '';
+            background: $main-color;
+            height: 10px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+            transform: translateY(8px);
+
+            @include xs {margin-top: 10px;}
+            @include sm {margin-top: 10px;}
+            @include md {margin-top: 10px;}
+        }
+
+        .testimonials {
+            border-left: 4px solid $main-color;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            .details {
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            img {
+                width: 20%;
+                height: 35%;
+                border-radius: 50%;
+                margin: 0 10px;
+
+                @include xs {
+                    width: 50%;
+                    height: 38%;
+                }
+                @include sm {
+                    width: 50%;
+                    height: 38%;
+                }
+                @include md {
+                    width: 25%;
+                    height: 50%;
+                }
+                @include lg {
+                    width: 70%;
+                    height: 50%;
+                }
+                @include xl {
+                    width: 50%;
+                    height: 50%;
+                }
+                @include exl {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            p {
+                font-size: 20px;
+
+                @include xs {font-size: 17px;}
+                @include sm {font-size: 17px;}
+                @include md {font-size: 15px;}
+                @include lg {font-size: 18px;}
+            }
+        }
+    }
+}

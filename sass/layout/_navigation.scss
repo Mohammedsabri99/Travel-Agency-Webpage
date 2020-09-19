@@ -1,0 +1,39 @@
+#home {
+    #nav-bar {
+        .navbar {
+            background-image: linear-gradient(to right, $main-color, $secondary-color);
+            transition: all .8s ease-in-out;
+
+            .navbar-brand {
+                img {width: 60%;}
+            }
+
+            .navbar-toggler {outline: none !important;}
+
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        padding: 0 10px;
+    
+                        .nav-link {
+                            color: $white-color;
+                            font-weight: 700;
+                            float: right;
+                            text-align: left;
+                            transition: all .8s ease-in-out;
+    
+                            &:hover,
+                            &:focus,
+                            &.active {
+                                color: $main-color;
+                                transform: scale(1.2);
+                                cursor: pointer;
+                                border-bottom: 1px solid $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
